@@ -10,7 +10,7 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Rui Fang(Ray).
 """
 ###############################################################################
 #
@@ -76,13 +76,16 @@ import rosegraphics as rg
 # (shorthand for rosegraphics) module.
 # -----------------------------------------------------------------------------
 window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
+window.delay(1)  # Bigger numbers mean slower animation.
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
 # -----------------------------------------------------------------------------
 boris = rg.SimpleTurtle()
+Hoda = rg.SimpleTurtle('blank')
+Hoda.pen = rg.Pen('LightSkyBlue', 11)
+Hoda.speed = 1
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -108,6 +111,11 @@ natasha.forward(50)
 
 natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
+Hoda.pen_up()
+Hoda.go_to(rg.Point(200, 0))
+Hoda.right(90)
+Hoda.pen_down()
+Hoda.draw_circle(90)
 
 ###############################################################################
 #

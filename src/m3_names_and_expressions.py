@@ -1,7 +1,13 @@
-
+import math
+print(math.pi)
 answer = 2 ** 5
 print(answer * 100)
+print(math.sqrt(10000))
+number = math.cos(180)
+print(number)
+print(77 + math.cos(2.75))
 
+print(type(print))
 ###############################################################################
 # TODO: 1.
 #   Read the 2 lines of code ABOVE this _TODO_.  That code:
