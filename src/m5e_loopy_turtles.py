@@ -45,30 +45,52 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 import rosegraphics as rg
 
 window = rg.TurtleWindow()
+window.delay(1)
 
-blue_turtle = rg.SimpleTurtle('turtle')
-blue_turtle.pen = rg.Pen('midnight blue', 3)
-blue_turtle.speed = 20  # Fast
+#blue_turtle = rg.SimpleTurtle('turtle')
+#blue_turtle.pen = rg.Pen('midnight blue', 3)
+#blue_turtle.speed = 20  # Fast
 
+
+Hoda = rg.SimpleTurtle('arrow')
+Hoda.pen = rg.Pen('LightSkyBlue', 2)
+Hoda.speed = 1
+
+sides = 10
+size = 100
+Hoda.pen_up()
+Hoda.go_to(rg.Point(-50, -100))
+Hoda.pen_down()
+for k in range(7):
+
+    Hoda.draw_regular_polygon(sides, size)
+    sides = sides - 1
+    Hoda.pen_up()
+    Hoda.left(45)
+    Hoda.forward(9)
+    Hoda.right(45)
+    Hoda.pen_down()
+    size = size - 10
 # The first square will be 300 x 300 pixels:
-size = 300
-
+#size = 300
+#
 # Do the indented code 13 times.  Each time draws a square.
-for k in range(13):
-
-    # Put the pen down, then draw a square of the given size:
-    blue_turtle.draw_square(size)
-
+#for k in range(5)    :
+#
+ #   # Put the pen down, then draw a square of the given size:
+ #   blue_turtle.draw_square(size)
+#
     # Move a little below and to the right of where the previous
     # square started.  Do this with the pen up (so nothing is drawn).
-    blue_turtle.pen_up()
-    blue_turtle.right(45)
-    blue_turtle.forward(10)
-    blue_turtle.left(45)
+ #   blue_turtle.pen_up()
+ #   blue_turtle.right(45)
+  #  blue_turtle.forward(10)
+  #  blue_turtle.left(45)
 
     # Put the pen down again (so drawing resumes).
     # Make the size for the NEXT square be 12 pixels smaller.
-    blue_turtle.pen_down()
-    size = size - 12
+  #  blue_turtle.pen_down()
+  #  size = size - 40
+
 
 window.close_on_mouse_click()
