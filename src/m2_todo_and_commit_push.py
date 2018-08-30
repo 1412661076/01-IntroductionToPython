@@ -1,5 +1,5 @@
 print('Hello, World')
-
+print(1 + 1)
 ###############################################################################
 #
 #   This line is a COMMENT -- a note to human readers of this file.
@@ -57,7 +57,7 @@ print('Hello, World')
 
 ###############################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Add another   print   statement below the current Line 1 above.
 #   It should print any string that you want (but keep it G-rated!)
 #
