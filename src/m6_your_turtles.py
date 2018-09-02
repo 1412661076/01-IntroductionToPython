@@ -5,12 +5,12 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and Rui Fang.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -34,7 +34,7 @@ window.delay(5)
 
 T1 = rg.SimpleTurtle('blank')
 T1.pen = rg.Pen('LightSkyBlue', 2)
-T1.speed = 10
+T1.speed = 5
 
 
 T1.pen_up()
@@ -68,7 +68,20 @@ T1.backward(100)
 
 
 T2 = rg.SimpleTurtle('blank')
-T2.pen = rg.Pen('red', 2)
-T2.speed = 1
-T2.go_to(rg.Point(x,y))
+T2.pen = rg.Pen('grey', 2)
+T2.speed = 5
+T2.pen_up()
+T2.go_to(rg.Point(0,-50))
+T2.right(135)
+
+rad = 45
+for k in range(8):
+    T2.draw_circle(rad)
+    T2.pen_up()
+    T2.forward(5)
+    T2.pen_down()
+    rad = rad - 5
+
+
+
 window.close_on_mouse_click()
