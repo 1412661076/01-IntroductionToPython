@@ -53,7 +53,7 @@ window.delay(1)
 
 
 Hoda = rg.SimpleTurtle('arrow')
-Hoda.pen = rg.Pen('LightSkyBlue', 2)
+Hoda.pen = rg.Pen('LightSkyBlue1', 2)
 Hoda.speed = 1
 
 sides = 10
@@ -61,13 +61,13 @@ size = 100
 Hoda.pen_up()
 Hoda.go_to(rg.Point(-50, -100))
 Hoda.pen_down()
-for k in range(7):
 
+for k in range(8):
     Hoda.draw_regular_polygon(sides, size)
     sides = sides - 1
     Hoda.pen_up()
     Hoda.left(45)
-    Hoda.forward(9)
+    Hoda.forward(8.7)
     Hoda.right(45)
     Hoda.pen_down()
     size = size - 10

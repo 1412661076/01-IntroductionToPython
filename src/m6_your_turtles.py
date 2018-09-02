@@ -2,7 +2,7 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Rui Fang.
 """
 ###############################################################################
 # TODO: 1.
@@ -27,3 +27,48 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.delay(5)
+
+T1 = rg.SimpleTurtle('blank')
+T1.pen = rg.Pen('LightSkyBlue', 2)
+T1.speed = 10
+
+
+T1.pen_up()
+T1.go_to(rg.Point(0,100))
+T1.pen_down()
+T1.draw_circle(40)
+T1.pen_up()
+T1.go_to(rg.Point(-18, 150))
+T1.pen_down()
+T1.draw_circle(5)
+T1.pen_up()
+T1.go_to(rg.Point(18,150))
+T1.pen_down()
+T1.draw_circle(5)
+T1.pen_up()
+T1.go_to(rg.Point(-15,120))
+T1.pen_down()
+T1.go_to(rg.Point(15,120))
+T1.pen_up()
+T1.go_to(rg.Point(0,100))
+T1.pen_down()
+T1.go_to(rg.Point(0,-50))
+T1.go_to(rg.Point(0,56))
+T1.left(45)
+T1.forward(100)
+T1.backward(100)
+T1.left(90)
+T1.forward(100)
+T1.backward(100)
+
+
+
+T2 = rg.SimpleTurtle('blank')
+T2.pen = rg.Pen('red', 2)
+T2.speed = 1
+T2.go_to(rg.Point(x,y))
+window.close_on_mouse_click()
